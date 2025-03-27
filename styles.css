@@ -1,176 +1,181 @@
+/* Importa fontes do Google Fonts: Montserrat e Lemon */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+/* Define variáveis de cores */
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #FF862A; /* Cor laranja claro para uso em todo o documento */
 }
 
+/* Estilos gerais do corpo da página */
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    font-size: 1rem; /* Tamanho da fonte padrão */
+    font-family: 'Montserrat'; /* Fonte padrão do corpo */
 }
 
+/* Estilos para o cabeçalho */
 header {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Cor de fundo do cabeçalho */
 }
 
-
+/* Estilos para seções */
 section {
-    padding-bottom: 5rem;
+    padding-bottom: 5rem; /* Espaçamento inferior para seções */
 }
 
-
+/* Estilos para links de navegação */
 .nav-link {
-    color: #CB6D43;
-    font-weight: 600;
+    color: #CB6D43; /* Cor dos links de navegação */
+    font-weight: 600; /* Peso da fonte dos links */
 }
 
-.menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
+/* Estilos para o menu de acessibilidade */
+.menu-acessibilidade {
+    position: fixed; /* Fixa o menu na tela */
+    top: 2rem; /* Distância do topo da tela */
+    right: 20px; /* Distância da direita da tela */
+    z-index: 1000; /* Garante que o menu fique acima de outros elementos */
 }
 
-.rotacao-botao{ 
-    transform: rotate(-90deg);
-    transform-origin: right center;
+/* Estilos para o botão de rotação */
+.rotacao-botao { 
+    transform: rotate(-90deg); /* Rotaciona o botão em -90 graus */
+    transform-origin: right center; /* Define o ponto de origem da rotação */
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
-    display: flex;
-    flex-direction: column;
+/* Estilos para as opções de acessibilidade */
+.opcoes-acessibilidade {
+    margin-top: 10px; /* Espaçamento superior */
+    display: flex; /* Exibe as opções em linha */
+    flex-direction: column; /* Organiza as opções em coluna */
 }
 
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
+/* Estilos para os botões dentro das opções de acessibilidade */
+.opcoes-acessibilidade button {
+    margin-bottom: 5px; /* Espaçamento inferior entre os botões */
 }
 
-.apresenta-lista{
-    display: none;
+/* Estilos para a lista de opções que estão ocultas */
+.apresenta-lista {
+    display: none; /* Oculta a lista por padrão */
 }
 
+/* Estilos para a seção de boas-vindas */
 .inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
+    background-image: url('img/4965007.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o espaço disponível */
+    background-position: right; /* Posiciona a imagem à direita */
+    border-radius: 80px; /* Bordas arredondadas */
+    width: 100%; /* Largura total */
+    height: 606px; /* Altura fixa */
+    padding: 40px; /* Espaçamento interno */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
+/* Estilos para a seção de início */
 #inicio {
-    position: relative; /* Adicione isso */
-    overflow: hidden; /* Opcional: corta o que ultrapassar */
+    position: relative; /* Permite posicionamento absoluto de elementos filhos */
+    overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites */
 }
 
-/* posicionamento para a imagem à direita */
+/* Estilos para a imagem na seção de início */
 .img-inicio {
-    position: absolute;
-    right: 2%;
-    width: 30rem; /* Reduzido de 45rem */
-    height: auto;
-    max-width: 100%; /* Evita que ultrapasse o container */
-    top: 50%; /* Posiciona no meio vertical */
-    transform: translateY(-50%); /* Centraliza exatamente */
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    right: 2%; /* Distância da direita */
+    width: 30rem; /* Largura fixa */
+    height: auto; /* Altura automática */
+    max-width: 100%; /* Evita que a imagem ultrapasse o container */
+    top: 45%; /* Posiciona a imagem verticalmente no meio */
+    transform: translateY(-50%); /* Centraliza verticalmente */
 }
 
-
+/* Estilos para o conteúdo à esquerda na seção de início */
 .esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    display: flex; /* Exibe o conteúdo em linha */
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    gap: 1rem; /* Espaçamento entre os elementos */
 }
 
-
+/* Estilos para o botão de início */
 .botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    /* Convertido para em aumenta o tamanho da fonte por tabela*/
-    height: 3em;
-    /* Convertido para em */
-    align-content: center;
-
+    background-color: var(--laranja-claro); /* Cor de fundo do botão */
+    border-radius: 30px; /* Bordas arredondadas */
+    border: none; /* Remove a borda padrão */
+    width: 14em; /* Largura fixa */
+    height: 3em; /* Altura fixa */
+    align-content: center; /* Centraliza o conteúdo */
 }
 
+/* Estilos para o título com sombra */
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--laranja-claro); /* Adiciona uma sombra ao texto com a cor laranja claro */
 }
 
-
+/* Estilos para a seção "tropicalia" */
 #tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    text-align: justify;
-    /* Ajuste o tamanho conforme necessário */
+    position: relative; /* Permite posicionamento absoluto de elementos filhos */
+    padding-top: 5rem; /* Espaçamento superior */
+    margin-top: 3rem; /* Margem superior */
+    margin-bottom: 3rem; /* Margem inferior */
+    background: url('img/flor.png') top right no-repeat, /* Imagem de fundo à direita */
+                url('img/flor-esquerda.png') bottom left no-repeat; /* Imagem de fundo à esquerda */
+    background-size: 180px 180px; /* Tamanho das imagens de fundo */
+    text-align: justify; /* Justifica o texto */
 }
 
+/* Estilos para o container dentro da seção "tropicalia" */
 #tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
+    display: flex; /* Exibe o conteúdo em linha */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    position: relative; /* Permite posicionamento absoluto de elementos filhos */
+    z-index: 1; /* Garante que o conteúdo fique acima das imagens de fundo */
 }
 
-
+/* Estilos para os títulos h2 */
 h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
+    font-family: 'Lemon', serif; /* Fonte serifada para os títulos */
+    font-size: 2.5em; /* Tamanho da fonte */
+    font-style: normal; /* Estilo normal da fonte */
+    color: var(--laranja-claro); /* Cor do texto usando a variável laranja claro */
 }
 
+/* Estilos para a seção "galeria" */
 #galeria {
-    background-color: #FAF4F4;
-
+    background-color: #FAF4F4; /* Cor de fundo da galeria */
 }
 
+/* Estilos para o fundo da galeria */
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat; /* Imagem de fundo à direita */
+    background-size: 180px 180px; /* Tamanho da imagem de fundo */
 }
 
+/* Estilos para a seção de contato */
 #contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
+    background-image: url('img/4965007.jpg'); /* Imagem de fundo da seção de contato */
+    background-size: cover; /* Cobre todo o espaço disponível */
+    padding: 4rem 0; /* Espaçamento interno para a seção de contato */
 }
 
+/* Estilos para o formulário */
 .formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
-    border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
-    font-weight: bold;
+    background-color: #ffffff; /* Cor de fundo do formulário */
+    padding: 2rem; /* Espaçamento interno dentro do formulário */
+    border-radius: 10px; /* Bordas arredondadas para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o formulário */
+    font-weight: bold; /* Peso da fonte em negrito */
 }
 
+/* Estilos para os botões dentro do formulário */
 .formulario button {
-    background-color: #CB6D43;
-    border: none;
-    font-weight: bold;
+    background-color: #CB6D43; /* Cor de fundo dos botões do formulário */
+    border: none; /* Remove a borda padrão */
+    font-weight: bold; /* Peso da fonte em negrito */
 }
 
-/* chama classe do bootstrap para modificar a cor */
+/* Estilos para os campos de entrada do formulário */
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #F1EDEF; /* Cor de fundo dos campos de entrada */
 }
