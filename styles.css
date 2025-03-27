@@ -81,6 +81,7 @@ section {
     background: url('img/flor.png') top right no-repeat,
         url('img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
+    text-align: justify;
     /* Ajuste o tamanho conforme necessário */
 }
 
