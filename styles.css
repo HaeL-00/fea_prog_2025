@@ -38,13 +38,20 @@ section {
     margin: 0 auto;
 }
 
+#inicio {
+    position: relative; /* Adicione isso */
+    overflow: hidden; /* Opcional: corta o que ultrapassar */
+}
+
 /* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
+    right: 2%;
+    width: 30rem; /* Reduzido de 45rem */
     height: auto;
+    max-width: 100%; /* Evita que ultrapasse o container */
+    top: 50%; /* Posiciona no meio vertical */
+    transform: translateY(-50%); /* Centraliza exatamente */
 }
 
 
