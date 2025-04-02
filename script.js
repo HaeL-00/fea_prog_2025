@@ -2,6 +2,8 @@
 const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
 // Seleciona as opções de acessibilidade pelo seu ID
 const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
+// Seleciona a opção de contraste pelo seu ID
+const alternaContraste = document.getElementById('alterna-contraste')
 
 // Adiciona um evento de clique ao botão de acessibilidade
 botaoDeAcessibilidade.addEventListener('click', function (){
@@ -36,4 +38,8 @@ document.addEventListener('DOMContentLoaded', function(){
         // Aplica o novo tamanho de fonte ao corpo do documento
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`;
     });
+    // Adiciona um evento de clique ao botão de contraste
+    alternaContraste.addEventListener('click', function(){
+        document.body.classList.toggle('alto-contraste')
+})
 });

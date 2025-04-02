@@ -5,6 +5,9 @@
 /* Define variáveis de cores */
 :root {
     --laranja-claro: #FF862A; /* Cor laranja claro para uso em todo o documento */
+    --alto-contraste-fundo: #000000; /* Cores alternativas para alterar o contraste*/
+    --alto-contraste-texto: #ffffff; /* Cores alternativas para alterar o contraste*/
+    --alto-contraste-link: #ffd700; /* Cores alternativas para alterar o contraste*/
 }
 
 /* Estilos gerais do corpo da página */
@@ -35,6 +38,48 @@ section {
     top: 2rem; /* Distância do topo da tela */
     right: 20px; /* Distância da direita da tela */
     z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+}
+
+/* Estilo para o seletor de contraste alternativo */
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+/* Indica em quais seções haverão alterações de contraste */
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+/* Altera o contraste nos links de navegação do menu */
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+/* Opções de contraste para os outros botões */
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+/* Opção de contraste para o fundo da seção Tropicália */ 
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+/* Opção de contraste para a Galeria */
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+
+/* /* Opção de contraste para o fundo da Galeria*/ */
+.alto-contraste .fundo-galeria {
+    background: none;
 }
 
 /* Estilos para o botão de rotação */
