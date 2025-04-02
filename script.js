@@ -4,6 +4,11 @@ const botaoDeAcessibilidade = document.getElementById('botao-acessibilidade');
 const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade');
 // Seleciona a opção de contraste pelo seu ID
 const alternaContraste = document.getElementById('alterna-contraste')
+// Ajusta a informação do menu de acessibilidade para tecnologias assistidas
+const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+
+// Faz com que o ajuste da informação do menu de acessibilidade ocorra somente enquanto o botão está selecionado
+botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
 
 // Adiciona um evento de clique ao botão de acessibilidade
 botaoDeAcessibilidade.addEventListener('click', function (){
