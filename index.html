@@ -73,7 +73,8 @@
                     <img src="img/logo-2.png" class="mb-3" width="563" height="278" loading="lazy" alt="Logotipo da Tropicália">
                     <!-- Logotipo adicional com dimensões fixas e carregamento otimizado -->
                     
-                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold" role="button" 
+                        aria-label="Quero conhecer mais sobre a Tropicália">Quero conhecer!</a>
                     <!-- Botão que leva o usuário à seção sobre a Tropicália -->
                 </div>
                 
@@ -85,19 +86,19 @@
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" aria-labelledby="tropicalia-heading">
             <!-- Seção explicativa sobre o movimento Tropicália -->
             <div class="container d-flex align-items-center">
                 <!-- Layout flexível com imagem e texto -->
                 <div class="col-4 d-flex justify-content-center">
                     <!-- Coluna para a imagem -->
-                    <img src="img/image (1).png" class="rounded-pill" alt="" width="273" height="331" loading="lazy">
+                    <img src="img/image (1).png" class="rounded-pill" alt="Representação visual do movimento Tropicália" width="273" height="331" loading="lazy">
                     <!-- Imagem com bordas arredondadas e carregamento otimizado -->
                 </div>
                 
                 <div class="col-5">
                     <!-- Coluna para o texto -->
-                    <h2>O que foi a Tropicália?</h2>
+                    <h2 id="tropicalia-heading">O que foi a Tropicália?</h2>
                     <!-- Título da seção -->
                     
                     <p class="p-2">
@@ -117,13 +118,13 @@
             </div>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" aria-labelledby="galeria-heading">
             <!-- Seção com uma galeria de imagens relacionadas ao movimento Tropicália -->
-            <h2 class="text-center pt-5">Galeria</h2>
+            <h2 class="text-center pt-5" id="galeria-heading">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria">
             <!-- Título da galeria -->
             
-            <div class="container p-3 mt-3 fundo-galeria">
+            <div class="container p-3 mt-3 fundo-galeria" aria-label="Galeria de imagens da Tropicália">
                 <!-- Contêiner para as imagens da galeria -->
                 <div class="row justify-content-md-center">
                     <!-- Linha do grid com imagens centralizadas -->
@@ -166,37 +167,47 @@
             </div>
         </section>
 
-        <section id="contato">
+        <section id="contato" aria-labelledby="contato-heading">
             <!-- Seção de contato com formulário -->
             <div class="container p-5 d-flex justify-content-center">
                 <div class="col-md-8 col-lg-10 rounded-5 formulario">
-                    <h2 class="mb-3">Entre em contato</h2>
+                    <h2 class="mb-3" id="contato-heading">Entre em contato</h2>
                     <!-- Título do formulário -->
                     
-                    <form>
+                    <form aria-label="Formulário de contato sobre Tropicália">
                         <div class="form-group mb-3">
                             <label for="nome">Nome</label>
                             <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                   placeholder="Digite seu nome completo">
+                                   placeholder="Digite seu nome completo"
+                                   aria-required="true"
+                                   aria-describedby="nome-help1">
+                                <small id="nome-help1" class="visually-hidden">Por favor, insira seu nome completo</small>
                             <!-- Campo para o nome do usuário -->
                         </div>
                         
                         <div class="form-group mb-3">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                   placeholder="Digite seu email">
+                                   placeholder="Digite seu email"
+                                   aria-required="true"
+                                   aria-describedby="nome-help2">
+                                <small id="nome-help2" class="visually-hidden">Por favor, digite seu e-mail</small>
                             <!-- Campo para o email do usuário -->
                         </div>
                         
                         <div class="form-group mb-3">
                             <label for="mensagem">Mensagem</label>
                             <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                      placeholder="Escreva sua mensagem"></textarea>
+                                      placeholder="Escreva sua mensagem"
+                                      aria-required="true"
+                                      aria-describedby="nome-help3">
+                                </textarea>
+                            <small id="nome-help3" class="visually-hidden">Por favor, insira o texto</small>
                             <!-- Campo para o usuário escrever uma mensagem -->
                         </div>
                         
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao" aria-label="Enviar mensagem do formulário">
                                 Enviar mensagem
                             </button>
                             <!-- Botão para enviar o formulário -->
