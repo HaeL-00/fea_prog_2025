@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" aria-lang="pt-br">
 <!-- Define o idioma principal do documento como português do Brasil -->
 
 <head>
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Estabelece uma conexão antecipada com o domínio do Google Fonts para melhorar o desempenho no carregamento de fontes -->
     
-    <title>Tropicália</title>
+    <title aria-label="Título do site: Tropicália">Tropicália</title>
     <!-- Define o título da página que será exibido na aba do navegador -->
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
@@ -29,26 +29,26 @@
 <body>
     <!-- Corpo principal do documento HTML -->
 
-    <header class="p-5">
+    <header class="p-5" role="banner">
         <!-- Cabeçalho do site com padding de 5 unidades -->
-        <nav class="container d-flex justify-content-between align-items-center">
+        <nav class="container d-flex justify-content-between align-items-center" aria-label="Navegação principal">
             <!-- Barra de navegação principal com layout flexível -->
             <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy">
             <!-- Logotipo do site com carregamento otimizado (lazy loading) -->
             
-            <ul class="nav mt-5">
+            <ul class="nav mt-5"role="Barra de menu">
                 <!-- Lista de navegação com links para diferentes seções da página -->
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#inicio" role="Item do menu">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria" role="Item do menu">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato" role="Item do menu">Contato</a></li>
             </ul>
             
-            <div id="acessibilidade" class="menu-acessibilidade">
+            <div id="acessibilidade" class="menu-acessibilidade" aria-label="Opções de acessibilidade">
                 <!-- Menu de acessibilidade com opções para ajustar o tamanho da fonte -->
                 <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
                 <!-- Botão para abrir o menu de acessibilidade -->
                 
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista" role="Menu">
                     <!-- Submenu com botões para aumentar ou diminuir o tamanho da fonte e mudança do contraste -->
                     <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
                     <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
@@ -61,16 +61,16 @@
     <main class="container my-5">
         <!-- Conteúdo principal do site com margens verticais -->
         
-        <section id="inicio" class="my-5">
+        <section id="inicio" class="my-5" aria-labelledby="inicio-heading">
             <!-- Seção inicial com mensagem de boas-vindas -->
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
                 <!-- Layout flexível com elementos alinhados e espaçados -->
                 <div class="esquerda-conteudo">
                     <!-- Contêiner para o texto e botão -->
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <h1 class="display-4 text-white fst-italic fw-bold" id="inicio-heading">Boas-vindas a</h1>
                     <!-- Título principal com estilo destacado -->
                     
-                    <img src="img/logo-2.png" class="mb-3" width="563" height="278" loading="lazy">
+                    <img src="img/logo-2.png" class="mb-3" width="563" height="278" loading="lazy" alt="Logotipo da Tropicália">
                     <!-- Logotipo adicional com dimensões fixas e carregamento otimizado -->
                     
                     <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
