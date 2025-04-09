@@ -18,6 +18,12 @@ botaoDeAcessibilidade.addEventListener('click', function (){
     opcoesDeAcessibilidade.classList.toggle('apresenta-lista');
 });
 
+// Adiciona elementos de suavidade no carregamento das sections
+ScrollReveal().reveal('#inicio', { delay: 500 });
+ScrollReveal().reveal('#tropicalia', { delay: 500 });
+ScrollReveal().reveal('#galeria', { delay: 500 });
+ScrollReveal().reveal('#contato', { delay: 500 });
+
 // Adiciona um evento que será executado quando o conteúdo do DOM estiver completamente carregado
 document.addEventListener('DOMContentLoaded', function(){
     // Seleciona o botão para aumentar a fonte pelo seu ID
